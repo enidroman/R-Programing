@@ -1,0 +1,110 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://vincentarelbundock.github.io/Rdatasets/doc/Ecdat/Star.html
+Subject: R: Effects on Learning of Small Class Sizes
+Date: Sat, 23 Jul 2022 23:42:32 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--Z59RHKuqvvwO1nKISqiBzFPFttY1IiJ2cfhbFqc4KA----"
+
+
+------MultipartBoundary--Z59RHKuqvvwO1nKISqiBzFPFttY1IiJ2cfhbFqc4KA----
+Content-Type: text/html
+Content-ID: <frame-C29960271791F1D5DAC235BC7FFD2068@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://vincentarelbundock.github.io/Rdatasets/doc/Ecdat/Star.html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns=3D"http://www.w3.org/1999/xht=
+ml"><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"><title>R: Effects on Learning of Small Class Sizes</title>
+
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0, user-scalable=3Dyes">
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"https://vincentarelbundo=
+ck.github.io/Rdatasets/doc/Ecdat/R.css">
+</head><body><div class=3D"container">
+
+<table width=3D"100%" summary=3D"page for Star"><tbody><tr><td>Star</td><td=
+ style=3D"text-align: right;">R Documentation</td></tr></tbody></table>
+
+<h2>Effects on Learning of Small Class Sizes </h2>
+
+<h3>Description</h3>
+
+<p>a cross-section from 1985-89
+</p>
+<p><em>number of observations</em> :  5748
+</p>
+<p><em>observation</em> :  individuals
+</p>
+<p><em>country</em> :  United States
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(Star)</pre>
+
+
+<h3>Format</h3>
+
+<p>A dataframe containing :
+</p>
+
+<dl>
+<dt>tmathssk</dt><dd><p>total math scaled score</p>
+</dd>
+<dt>treadssk</dt><dd><p>total reading scaled score</p>
+</dd>
+<dt>classk</dt><dd><p>type of class, a factor with levels (regular,small.cl=
+ass,regular.with.aide)</p>
+</dd>
+<dt>totexpk</dt><dd><p>years of total teaching experience</p>
+</dd>
+<dt>sex</dt><dd><p>a factor with levels (boy,girl)</p>
+</dd>
+<dt>freelunk</dt><dd><p>qualified for free lunch ?</p>
+</dd>
+<dt>race</dt><dd><p>a factor with levels (white,black,other)</p>
+</dd>
+<dt>schidkn</dt><dd><p>school indicator variable</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Project STAR:
+</p>
+<p><a href=3D"https://web.archive.org/web/20010602060225/http://www.heros-i=
+nc.org/star.htm">Description from 2001-06-02</a>.
+<a href=3D"https://web.archive.org/web/20110618025529/http://www.heros-inc.=
+org/star.htm">Description from 2011-06-18</a>.
+</p>
+
+
+<h3>References</h3>
+
+<p>Stock, James H.  and  Mark W.  Watson (2003) <em>Introduction to Econome=
+trics</em>, Addison-Wesley Educational Publishers, chapter 11.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Index.Source</code>, <code>Index.Economics</code>, <code>Index.Eco=
+nometrics</code>, <code>Index.Observations</code></p>
+
+
+</div>
+</body></html>
+------MultipartBoundary--Z59RHKuqvvwO1nKISqiBzFPFttY1IiJ2cfhbFqc4KA----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://vincentarelbundock.github.io/Rdatasets/doc/Ecdat/R.css
+
+@charset "utf-8";
+=0A
+------MultipartBoundary--Z59RHKuqvvwO1nKISqiBzFPFttY1IiJ2cfhbFqc4KA------
