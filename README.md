@@ -1,2 +1,2 @@
-# R-Programing
-R Programing
+# R-Programming
+R Programming
