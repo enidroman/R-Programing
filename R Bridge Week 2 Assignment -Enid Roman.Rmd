@@ -1,0 +1,162 @@
+---
+title: "R Bridge Week 2 Assignment"
+author: "Enid Roman"
+date: "`r Sys.Date()`"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+library("pacman")
+```
+
+# Already installed Tidyverse to upload csv file from my laptop.
+# I will load the package now. 
+
+```{r}
+library("tidyverse")
+```
+
+# Upload my csv file.
+
+```{r}
+Star <- read.csv("Star.csv")
+```
+
+# Use the summary function to gain an overview of the data set.
+
+```{r}
+summary(Star)
+```
+# Display the first couple of rows to observe. 
+
+```{r}
+data(Star)
+head(Star)
+```
+# Display the mean and median for at least 2 attributes.
+
+# Mean and Median for tmatssk.
+
+```{r}
+mean(Star$tmathssk)
+```
+```{r}
+median(Star$tmathssk)
+```
+# Mean and Median for treadssk.
+
+```{r}
+mean(Star$treadssk)
+```
+```{r}
+median(Star$treadssk)
+```
+# Create a new data frame with a subset of the columns and rows. Make sure to rename it. 
+
+# Display columns X, tmathssk, treadssk, classk, sex, race.
+
+# Display tmathssk and treadssk greater than or equal to 500.
+
+```{r}
+df.star <- data.frame(Star)
+substar <- df.star[df.star$tmathssk >= 500 & df.star$treadssk >= 500, c("X", "tmathssk", "treadssk", "classk", "sex", "race")]
+substar
+```
+# Create new column names for the new data frame.
+
+# Display Column Names.
+
+```{r}
+colnames(substar)
+```
+```{r}
+colnames(substar)[1:6] = c("STUDENT ID", "MATH SCORE", "READING SCORE", "CLASS TYPE", "GENDER", "RACE")
+head(substar)
+```
+# Use the summary function to create an overview of your new data frame. Then print the mean and median for the same two attributes. Please compare.
+
+```{r}
+summary(substar)
+```
+
+# Display the mean and median for the same two attributes. Please compare.
+
+# Mean and Median for Math Score.
+
+# My conclustion on my comparison below removing the scores below 500 had increased the average and the median in substar. 
+
+```{r}
+mean(substar$'MATH SCORE') 
+
+# The average in MATH SCORE in substar dataframe is more than the average in tmathssk in Star dataframe.  
+```
+```{r}
+median(substar$`MATH SCORE`)
+
+# The median in MATH SCORE in substar dataframe is more than the average in tmathssk in Star dataframe. 
+```
+# Mean and Median for READING SCORE.
+
+```{r}
+mean(substar$`READING SCORE`)
+
+# The average in READING SCORE in substar dataframe is more than the average in treadssk in Star dataframe. 
+```
+```{r}
+median(substar$`READING SCORE`)
+
+# The in median READING SCORE in substar dataframe is more than the median in treadssk in Star dataframe. 
+```
+# For at least 3 values in a column please rename so that every value in that column is renamed. (Did 8.)
+
+```{r}
+substar[substar == "boy"] <- "Male"
+substar[substar == "girl"] <- "Female"
+substar[substar == "regular"] <- "Regular Class"
+substar[substar == "regular.with.aide"] <- "Regular Class With Aide"
+substar[substar == "small.class"] <- "Small Class"
+substar[substar == "white"] <- "White"
+substar[substar == "black"] <- "Black"
+substar
+rownames(substar) <- 1:nrow(substar)
+substar
+```
+# Display enough rows to see examples of all of steps 1-5 above.
+
+```{r}
+head(substar,10)
+```
+# BONUS – place the original .csv in a github file and have R read from the link.
+
+```{r}
+theUrl <- "https://raw.githubusercontent.com/enidroman/R-Programing/main/Star.csv"
+bsubstar <- read.table(file=theUrl, header=TRUE, sep=",")
+head(bsubstar)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
