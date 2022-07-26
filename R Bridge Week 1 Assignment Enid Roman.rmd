@@ -1,0 +1,45 @@
+---
+title: "R Bridge Week 1 Assignment"
+author: "Enid Roman"
+date: "`r Sys.Date()`"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Write a loop that calculates 12-factoral.
+
+```{r}
+num <- 12
+factorial <- 1
+for (i in (1:num)) {
+  factorial <- factorial * i
+}
+factorial
+```
+#Show how to create a numeric vector that contains the sequence from 20 to 50 by 5. 
+
+```{r}
+seq(20, 50, by = 5)
+```
+#Create the function “quadratic” that takes a trio of input numbers a, b, and c and solve the quadratic
+equation. The function should print as output the two solutions.
+
+```{r}
+quadratic <- function(a, b, c) {
+  if (a == 0){
+    return ("Invalid Equation")
+  }
+x <- (b ^ 2-4 * a * c)
+solution1 <- (-b + sqrt(x))/(2*a)
+solution2 <- (-b - sqrt(x))/(2*a)
+return (c(solution1, solution2))
+}
+print(quadratic(1,-1,-2))
+```
+
